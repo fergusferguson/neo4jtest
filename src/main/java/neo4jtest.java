@@ -43,11 +43,13 @@ public class neo4jtest {
                         System.out.println(pair.value().toString());
                         System.out.println();
 
+                        // Get the depth of the path
+                        System.out.println("Path depth : " + pair.value().asPath().length());
+
                         // Get the list of segments in the record and iterate over them. Segment = hop.
                         Iterator<Path.Segment> seg = pair.value().asPath().iterator();
                         while (seg.hasNext()){
                             Path.Segment s = seg.next();
-//                            System.out.println(s);
 
                             // get the start node, find the labels and get the node properties
                             Node startNode = s.start();
