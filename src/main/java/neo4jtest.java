@@ -43,7 +43,7 @@ public class neo4jtest {
                         System.out.println(pair.value().toString());
                         System.out.println();
 
-                        // Get the list of segments in the record and iterate over them
+                        // Get the list of segments in the record and iterate over them. Segment = hop.
                         Iterator<Path.Segment> seg = pair.value().asPath().iterator();
                         while (seg.hasNext()){
                             Path.Segment s = seg.next();
@@ -79,7 +79,7 @@ public class neo4jtest {
                                 System.out.println(endNodeEntry.getKey() + " : " + endNodeEntry.getValue().toString());
                             }
                         }
-                        
+
                     }
                 }
             }
