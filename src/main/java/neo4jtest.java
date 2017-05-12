@@ -79,40 +79,7 @@ public class neo4jtest {
                                 System.out.println(endNodeEntry.getKey() + " : " + endNodeEntry.getValue().toString());
                             }
                         }
-
-                        // Get all the relationships in the path
-//                        System.out.println();
-//                        System.out.println("GET RELATIONSHIPS");
-//                        Iterable<Relationship> rels = pair.value().asPath().relationships();
-//
-//                        for (Relationship r : rels){
-//                            String type = r.type();
-//                            System.out.println("Rel type : " + type);
-//                            Map<String, Object> relMap = r.asMap();
-//
-//                            for (Map.Entry<String, Object> entry : relMap.entrySet()) {
-//                                System.out.println(entry.getKey() + " : " + entry.getValue().toString());
-//                            }
-//                            System.out.println();
-//                        }
-//
-//                        System.out.println();
-//
-//                         Get all the nodes in the path
-//                        System.out.println("GET NODES");
-//                        Iterable<Node> nodes = pair.value().asPath().nodes();
-//
-//                        for (Node n : nodes) {
-//                            Iterable<String> labels = n.labels();
-//                            System.out.println("Labels : " + labels);
-//                            Map<String, Object> nodeMap = n.asMap();
-//
-//                            for (Map.Entry<String, Object> entry : nodeMap.entrySet()) {
-//                                System.out.println(entry.getKey() + " : " + entry.getValue().toString());
-//                            }
-//                            System.out.println();
-//
-//                        }
+                        
                     }
                 }
             }
